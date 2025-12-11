@@ -5,29 +5,30 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int n;
-    cin >> n;
+    int t;
+    cin >> t;
 
-    while (n--) {
-        int p, k;
-        cin >> p >> k;
-
-        string s;
-        cin >> s;  // read "1001"
-
-        int c = 0;
-        int i = 0;
-
-        while (i < p) {
-            if (s[i] == '0') {
-                c++;
-                i++;
-            } else {   // s[i] == '1'
-                i += k + 1;
+    while (t--) {
+        int n;
+        cin >> n;
+        
+        vector<int> a(n);
+        for(int i=0;i<n;i++){
+            cin >> a[i];
+        }
+        int c =0;
+        for(int i=0;i<a.size()-1;i++){
+           // int c= 0;
+            for(int j=i+1;j<a.size();j++){
+             if(a[i]>a[j]){
+                a.erase(a.begin()+j);
+               c++;
+               j--;
+             }
+             
             }
         }
-
-        cout << c << "\n";
+        cout << c << endl;
     }
 
     return 0;
