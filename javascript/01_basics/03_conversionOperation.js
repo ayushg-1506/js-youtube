@@ -9,19 +9,19 @@ let b= Boolean(age)
 console.log(typeof b);
 console.log(b);
 // OPERATIONS
-console.log(2+2);
-console.log(10-2);
-console.log(2*8);
-console.log(64/2);
-console.log(2**10);
-console.log(55%2);
+// console.log(2+2);
+// console.log(10-2);
+// console.log(2*8);
+// console.log(64/2);
+// console.log(2**10);
+// console.log(55%2);
 
 let q = "ayush"
 let w = " gupta"
 console.log(q+w);
 
-// console.log("1" + 2 + 2); if string comes first everything is taken as string
-// console.log(1 + 2 + "2"); if string comes last first the first code is executed then string is taken
+console.log("1" + 2 + 2); //if string comes first everything is taken as string
+console.log(1 + 2 + "2"); //if string comes last first the first code is executed then string is taken
 
 let gameCounter = 100
 ++gameCounter;// 
